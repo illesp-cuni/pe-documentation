@@ -17,4 +17,14 @@ chain_length 20
 box 40
 cycles 100
 ```
-Now that we have created the simple input file we can run our first simulation.
+Now that we have created the simple input file we can run our first simulation using:
+```bash
+./pe pe.in
+```
+The last three lines of your output should look something like this:
+
+```bash
+# n=20, cycles=100(+0), n_beta=1, t_beta=1, beta0=0.01, dt 0.02(*20T); <log(w)>=0 +- 0, SG 1, <Re> 5.56 +- 0.04 (0.39), <Rg> 2.62 +- 0.01 (0.11), <r^2> 1.27, AR 1.000, NE 101, NF 2001
+# accepted/rejected 100/0, RX accepted/rejected 0/0, PX accepted/rejected 0/0
+# 100 steps done, 0.4s (3.6ms per step)
+```
