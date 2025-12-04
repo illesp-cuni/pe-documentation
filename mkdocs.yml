@@ -1,0 +1,27 @@
+site_name: pe documentation
+# Theme Settings (If using Material)
+theme:
+  name: material
+  features:
+    - search.suggest
+    - navigation.expand
+    - content.code.annotate
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - fenced_code
+# Navigation Structure (Crucial for a usable site)
+nav:
+  - Home: index.md
+  - 1. Getting Started:
+    - Setting Up: 1-getting_started/setup.md
+    - Hello Polymer!: 1-getting_started/hello_polymer.md
+  - 2. Input Parameters:
+    - Deployment Process: 2-how-to-guides/deployment.md
+    - Common Troubleshooting: 2-how-to-guides/troubleshooting.md
+  - 3. Reference:
+    - API Specifications: 3-reference/api-specs.md
+    - Configuration Parameters: 3-reference/config.md
+  - 4. Explanation (Understanding):
+    - Architecture Overview: 4-explanation/architecture.md
+    - Glossary of Terms: 4-explanation/glossary.md
