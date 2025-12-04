@@ -1,4 +1,5 @@
 site_name: pe documentation
+site_url: https://illesp-cuni.github.io/pe-documentation/
 # Theme Settings (If using Material)
 theme:
   name: material
