@@ -20,9 +20,3 @@ nav:
   - 2. Input Parameters:
     - Deployment Process: 2-how-to-guides/deployment.md
     - Common Troubleshooting: 2-how-to-guides/troubleshooting.md
-  - 3. Reference:
-    - API Specifications: 3-reference/api-specs.md
-    - Configuration Parameters: 3-reference/config.md
-  - 4. Explanation (Understanding):
-    - Architecture Overview: 4-explanation/architecture.md
-    - Glossary of Terms: 4-explanation/glossary.md
