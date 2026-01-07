@@ -1,0 +1,33 @@
+site_name: pe documentation
+site_url: https://illesp-cuni.github.io/pe-documentation/
+# Theme Settings (If using Material)
+theme:
+  name: material
+  features:
+    - search.suggest
+    - navigation.expand
+    - content.code.annotate
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - fenced_code
+  - attr_list
+  - toc
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.arithmatex
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+# Navigation Structure (Crucial for a usable site)
+nav:
+  - Home: index.md
+  - 1. Getting Started:
+    - Setting Up: 1-getting_started/setup.md
+    - Hello Polymer!: 1-getting_started/hello_polymer.md
+    - Methods: 1-getting_started/methods.md
+  - 2. Example Systems:
+    - Linear Homopolymer: 2-examples/lhomo.md
+  - 3. Input Parameters:
+    - Introduction to Initializations: 3-input_parameters/introduction.md
+    - Simple Initialization: 3-input_parameters/init_sc.md
