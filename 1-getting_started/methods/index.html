@@ -792,48 +792,19 @@ m_i \frac{d^2 z_i}{dt^2} = -\frac{\partial U}{\partial z_i}
 </div>
 <p>By integrating these equations of motion over small time steps, MD generates trajectories that sample the system’s <strong>phase space</strong>. Over long times, these trajectories approximate the ensemble distribution, allowing computation of thermodynamic and dynamic properties.</p>
 <h2 id="hamiltonian-monte-carlo-hmc-method">Hamiltonian Monte Carlo (HMC) Method</h2>
-<p>Hamiltonian Monte Carlo (HMC) is a <strong>hybrid method</strong> that combines the strengths of <strong>Monte Carlo (MC) sampling</strong> and <strong>Molecular Dynamics (MD)</strong>. It uses <strong>dynamical trajectories</strong> to propose moves in configuration space while preserving the <strong>Boltzmann distribution</strong>, improving sampling efficiency for high-dimensional systems.</p>
-<p>In HMC, we introduce <strong>fictitious momenta</strong> <span class="arithmatex"><span class="MathJax_Preview">\(\mathbf{p}_i\)</span><script type="math/tex">\(\mathbf{p}_i\)</script></span> for each particle and define the <strong>Hamiltonian</strong>:
+<p>Hamiltonian Monte Carlo (HMC) is a <strong>hybrid method</strong> that combines the strengths of <strong>Monte Carlo (MC) sampling</strong> and <strong>Molecular Dynamics (MD)</strong>. It uses <strong>dynamical trajectories</strong> to propose moves for evaluation by Metropolis algorithm, improving sampling efficiency for high-dimensional systems.</p>
+<p>In HMC, we introduce <strong>fictitious momenta</strong> <span class="arithmatex"><span class="MathJax_Preview">\(\mathbf{p}_i\)</span><script type="math/tex">\(\mathbf{p}_i\)</script></span>, taken from <strong>Maxwell-Boltzman distribution</strong> at the same temperature that <span class="arithmatex"><span class="MathJax_Preview">\(\beta = 1/(k_B T)\)</span><script type="math/tex">\(\beta = 1/(k_B T)\)</script></span> is set to. For each particle we then define the <strong>Hamiltonian</strong>:
 $$
 H(\mathbf{r}^N, \mathbf{p}^N) = U(\mathbf{r}^N) + K(\mathbf{p}^N)
 $$</p>
 <p>where:<br />
 - <span class="arithmatex"><span class="MathJax_Preview">\(U(\mathbf{r}^N)\)</span><script type="math/tex">\(U(\mathbf{r}^N)\)</script></span> is the potential energy,<br />
 - <span class="arithmatex"><span class="MathJax_Preview">\(K(\mathbf{p}^N) = \sum_i \frac{\mathbf{p}_i^2}{2 m_i}\)</span><script type="math/tex">\(K(\mathbf{p}^N) = \sum_i \frac{\mathbf{p}_i^2}{2 m_i}\)</script></span> is the kinetic energy associated with the momenta.</p>
-<p>The <strong>joint Boltzmann distribution</strong> over positions and momenta is:
+<p>HMC uses <strong>MD dynamics</strong> to generate trial moves.</p>
+<p>After generating a trajectory, the new configuration is accepted according to the <strong>Metropolis criterion</strong> based on the Hamiltonian:
 $$
-P(\mathbf{r}^N, \mathbf{p}^N) \propto e^{-\beta H(\mathbf{r}^N, \mathbf{p}^N)}
+P_{\text{accept}} = \min \Big( 1, e^{-\beta \left[ H(\mathbf{r}^N_{\text{new}}, \mathbf{p}^N_{\text{new}}) - H(\mathbf{r}^N_{\text{old}}, \mathbf{p}^N_{\text{old}}) \right]} \Big)
 $$</p>
-<hr />
-<p>HMC uses <strong>MD-like dynamics</strong> to generate trial moves:</p>
-<div class="arithmatex">
-<div class="MathJax_Preview">
-\begin{cases}
-\frac{d \mathbf{r}_i}{dt} = \frac{\partial H}{\partial \mathbf{p}_i} = \frac{\mathbf{p}_i}{m_i} \\
-\frac{d \mathbf{p}_i}{dt} = -\frac{\partial H}{\partial \mathbf{r}_i} = -\frac{\partial U}{\partial \mathbf{r}_i}
-\end{cases}
-</div>
-<script type="math/tex; mode=display">
-\begin{cases}
-\frac{d \mathbf{r}_i}{dt} = \frac{\partial H}{\partial \mathbf{p}_i} = \frac{\mathbf{p}_i}{m_i} \\
-\frac{d \mathbf{p}_i}{dt} = -\frac{\partial H}{\partial \mathbf{r}_i} = -\frac{\partial U}{\partial \mathbf{r}_i}
-\end{cases}
-</script>
-</div>
-<ul>
-<li>These equations are integrated numerically (e.g., using the <strong>leapfrog integrator</strong>) over a short trajectory.  </li>
-<li>The dynamics propose a new configuration in a <strong>large, collective move</strong>, which reduces the random-walk behavior typical of standard MC.</li>
-</ul>
-<hr />
-<p>After generating a trajectory, the new configuration <span class="arithmatex"><span class="MathJax_Preview">\((\mathbf{r}^N_{\text{new}}</span><script type="math/tex">\((\mathbf{r}^N_{\text{new}}</script></span>, <span class="arithmatex"><span class="MathJax_Preview">\mathbf{p}^N_{\text{new}})\)</span><script type="math/tex">\mathbf{p}^N_{\text{new}})\)</script></span> is accepted according to the <strong>Metropolis criterion</strong> based on the Hamiltonian:</p>
-<div class="arithmatex">
-<div class="MathJax_Preview">
-P_{\text{accept}} = \min \Big( 1, e^{-\beta \left[ H(\mathbf{r}^N_{\text{new}}, \mathbf{p}^N_{\text{new}}) - H(\mathbf{r}^N_{\text{old}}, \mathbf{p}^N_{\text{old}}) \right]} \Big)
-</div>
-<script type="math/tex; mode=display">
-P_{\text{accept}} = \min \Big( 1, e^{-\beta \left[ H(\mathbf{r}^N_{\text{new}}, \mathbf{p}^N_{\text{new}}) - H(\mathbf{r}^N_{\text{old}}, \mathbf{p}^N_{\text{old}}) \right]} \Big)
-</script>
-</div>
 <ul>
 <li>If the Hamiltonian is exactly conserved, the move is always accepted.  </li>
 <li>Numerical integration errors may slightly change <span class="arithmatex"><span class="MathJax_Preview">H</span><script type="math/tex">H</script></span>, which the Metropolis step corrects to maintain <strong>detailed balance</strong>.</li>
