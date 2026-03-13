@@ -13,12 +13,11 @@ box 200.0           % Size of simulation box
 r0 1.0              % Bead distance at the minimum of the harmonic bonding potential
 e_bonding 10.0      % Bonding interaction parameter (can be thought of as bond stiffness)
 e_nonbonding 1.5    % Non-bonding interaction parameter
-dh_flag 0           % 0: Coulomb, -1: DH with all small ions, -2: DH with minimum small ions, -3: DH without any small ions, 1: HMC Coulomb/DH
-theta 0             % strength of the attractive interaction, 0.2 below theta state
+theta 0             % Strength of the attractive interaction, 0.2 below theta state
 
 % ====== SIMULATION SETTINGS ======
-shoot 3             % how to initialize polymer, for 0 make an extended conformation, otherwise make |shoot| trials, if shoot<0 use only bonding interactions
-mx_weight 1.5       % how much randomness (for shoot==0) or persistence (for shoot!=0) to add
+shoot 3             % How to initialize polymer, for 0 make an extended conformation, otherwise make |shoot| trials, if shoot<0 use only bonding interactions
+mx_weight 1.5       % How much randomness (for shoot==0) or persistence (for shoot!=0) to add
 job 2               % 1: MD, 2: HMC
 order 2             % integrator order 2, 4 or 6
 dt 0.3              % integration time-step
@@ -41,18 +40,3 @@ sf_period 0         % how often to write out scattering function, <1 to turn off
 m_pbc 0             % movie in PBC
 
 ```
-<div id="viewport" style="width:600px; height:400px;"></div>
-
-<script src="https://unpkg.com/ngl@latest/dist/ngl.js"></script>
-<script>
-  var stage = new NGL.Stage("viewport");
-
-stage.loadFile("/docs/assets/e0.pdb", { ext: "pdb", isTrajectory: true }).then(o => {
-  o.addRepresentation("ball+stick", { colorScheme: "element" });
-  o.autoView();
-});
-
-  window.addEventListener("resize", function () {
-    stage.handleResize();
-  });
-</script>

@@ -20,9 +20,9 @@ $$
 
 where:  
 - $\(A_i\)$ is the value of the observable in state $\(i\)$,  
-- $\(P_i\)$ is the Boltzmann probability of state $\(i\)$, $\(P_i = \frac{e^{-\beta E_i}}{Z}\)$,  
+- $\(P_i\)$ is the Boltzmann probability of state $\(i\)$, $\(P_i = \frac{e^{-\beta E_i}}{Q}\)$,  
 - $\(E_i\)$ is the energy of state $\(i\)$,  
-- $\(Z = \sum_i e^{-\beta E_i}\)$ is the partition function (or sum over states).
+- $\(Q = \sum_i e^{-\beta E_i}\)$ is the partition function (or sum over states).
 
 In continuous interacting chemical systems:
 $$
@@ -92,9 +92,9 @@ By integrating these equations of motion over small time steps, MD generates tra
 
 ## Hamiltonian Monte Carlo (HMC) Method
 
-Hamiltonian Monte Carlo (HMC) is a **hybrid method** that combines the strengths of **Monte Carlo (MC) sampling** and **Molecular Dynamics (MD)**. It uses **dynamical trajectories** to propose moves in configuration space while preserving the **Boltzmann distribution**, improving sampling efficiency for high-dimensional systems.
+Hamiltonian Monte Carlo (HMC) is a **hybrid method** that combines the strengths of **Monte Carlo (MC) sampling** and **Molecular Dynamics (MD)**. It uses **dynamical trajectories** to propose moves for evaluation by Metropolis algorithm, improving sampling efficiency for high-dimensional systems.
 
-In HMC, we introduce **fictitious momenta** $\(\mathbf{p}_i\)$ for each particle and define the **Hamiltonian**:
+In HMC, we introduce **fictitious momenta** $\(\mathbf{p}_i\)$, taken from **Maxwell-Boltzman distribution** at the same temperature that $\(\beta = 1/(k_B T)\)$ is set to. For each particle we then define the **Hamiltonian**:
 $$
 H(\mathbf{r}^N, \mathbf{p}^N) = U(\mathbf{r}^N) + K(\mathbf{p}^N)
 $$
@@ -103,29 +103,9 @@ where:
 - $\(U(\mathbf{r}^N)\)$ is the potential energy,  
 - $\(K(\mathbf{p}^N) = \sum_i \frac{\mathbf{p}_i^2}{2 m_i}\)$ is the kinetic energy associated with the momenta.
 
-The **joint Boltzmann distribution** over positions and momenta is:
-$$
-P(\mathbf{r}^N, \mathbf{p}^N) \propto e^{-\beta H(\mathbf{r}^N, \mathbf{p}^N)}
-$$
+HMC uses **MD dynamics** to generate trial moves.
 
----
-
-HMC uses **MD-like dynamics** to generate trial moves:
-
-$$
-\begin{cases}
-\frac{d \mathbf{r}_i}{dt} = \frac{\partial H}{\partial \mathbf{p}_i} = \frac{\mathbf{p}_i}{m_i} \\
-\frac{d \mathbf{p}_i}{dt} = -\frac{\partial H}{\partial \mathbf{r}_i} = -\frac{\partial U}{\partial \mathbf{r}_i}
-\end{cases}
-$$
-
-- These equations are integrated numerically (e.g., using the **leapfrog integrator**) over a short trajectory.  
-- The dynamics propose a new configuration in a **large, collective move**, which reduces the random-walk behavior typical of standard MC.
-
----
-
-After generating a trajectory, the new configuration $\((\mathbf{r}^N_{\text{new}}$, $\mathbf{p}^N_{\text{new}})\)$ is accepted according to the **Metropolis criterion** based on the Hamiltonian:
-
+After generating a trajectory, the new configuration is accepted according to the **Metropolis criterion** based on the Hamiltonian:
 $$
 P_{\text{accept}} = \min \Big( 1, e^{-\beta \left[ H(\mathbf{r}^N_{\text{new}}, \mathbf{p}^N_{\text{new}}) - H(\mathbf{r}^N_{\text{old}}, \mathbf{p}^N_{\text{old}}) \right]} \Big)
 $$
