@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,11 +37,13 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -52,7 +51,17 @@
 
     
     
-  </head>
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -62,6 +71,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#model_type-0-init_sc" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -78,12 +92,12 @@
     <a href="../.." title="pe documentation" class="md-header__button md-logo" aria-label="pe documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -111,24 +125,24 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -136,7 +150,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -166,7 +180,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -178,13 +192,13 @@
     <a href="../.." title="pe documentation" class="md-nav__button md-logo" aria-label="pe documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     pe documentation
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -230,7 +244,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2">
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -260,7 +274,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -370,7 +384,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -400,7 +414,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -454,7 +468,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -484,7 +498,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -527,6 +541,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simple Initialization
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -544,6 +578,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#chain-defining-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chain defining parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#random-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dendrimer-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dendrimer grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comb-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comb grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diamond-gel-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diamond gel grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -565,7 +690,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -574,6 +699,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#chain-defining-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chain defining parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#random-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dendrimer-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dendrimer grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comb-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comb grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diamond-gel-grafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diamond gel grafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -590,9 +797,322 @@
 
 
 
-  <h1>Simple Initialization</h1>
+<h1 id="model_type-0-init_sc">Model_type 0 - init_sc</h1>
+<p>This initialization is used for creating everything from simple homopolymer to stars, combs, gels and much more.</p>
+<h2 id="chain-defining-parameters">Chain defining parameters</h2>
+<p><code>chains int</code> - number of chains in the system</p>
+<p><code>chain_length int</code> - length of a single polymer chain</p>
+<p><code>n_branches int</code> - number of branches on a single polymer chain (if branching is present)</p>
+<p><code>branch_length int</code> - length of a single branch (if branching is present)</p>
+<h2 id="mode">Mode</h2>
+<p><code>mode int</code> - mode of branching, this parameter directly influences grafting of branches onto the main polymer chain. </p>
+<p>Example values for mode :</p>
+<h3 id="random-grafting">Random grafting</h3>
+<p><code>mode -1</code> </p>
+<p>grafts branches at random positions of the main chains</p>
+<h3 id="dendrimer-grafting">Dendrimer grafting</h3>
+<p><code>mode -2</code> </p>
+<p>grafts branches to create a dendrimer, this setting changes multiple parameters</p>
+<p><code>chain_length int</code> - length of the base chain. All additional branches originate from bead 0 of this chain.
+<code>branch_length</code> - length of branches</p>
+<div class="admonition danger">
+<p class="admonition-title">Requirement</p>
+<p><code>chain_length</code> = <code>branch_length</code> + 1, note that first set of branches always contains one more branch than the branches originating from the remaining knots.</p>
+</div>
+<p><code>mode -int / 10</code> - the number of branches originating from a single knot, for simplicity we will call this <code>bf</code> as a short for branching factor</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Example 1</th>
+<th>Example 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Representation</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/dendrimer_growth_2.gif" data-desc-position="bottom"><img alt="Incomplete Dendrimer" src="../../assets/img/dendrimer_growth_2.gif" width="600"></a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/dendrimer_growth.gif" data-desc-position="bottom"><img alt="Complete Dendrimer" src="../../assets/img/dendrimer_growth.gif" width="600"></a></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Incomplete dendrimer branching</td>
+<td>Complete dendrimer branching</td>
+</tr>
+<tr>
+<td><code>chain_length</code></td>
+<td><code>10</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>branch_length</code></td>
+<td><code>9</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>b_f (mode / 10)</code></td>
+<td><code>5</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td><code>-50</code></td>
+<td><code>-20</code></td>
+</tr>
+</tbody>
+</table>
+<p>Number of branches in a complete dendrimer</p>
+<p>For a complete dendrimer, the total number of branches is</p>
+<div class="arithmatex">\[
+n_{\mathrm{branches}}
+=
+b_f
++
+(b_f+1)\sum_{i=1}^{g} b_f^i
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(b_f\)</span> is the branching factor,</li>
+<li><span class="arithmatex">\(g\)</span> is the number of complete generations,</li>
+<li><span class="arithmatex">\(n_{\mathrm{branches}}\)</span> is the total number of branches.</li>
+</ul>
+<p>For example, when <span class="arithmatex">\(b_f=2\)</span> and <span class="arithmatex">\(g=2\)</span>,</p>
+<div class="arithmatex">\[
+n_{\mathrm{branches}}
+=
+2
++
+3\left(2+2^2\right)
+=
+20
+\]</div>
+<p>Parameters and preview for dendrimers can be calculated in our calculator below.</p>
+<div id="dendrimer-tool" class="dendrimer-tool">
 
+  <div class="dendrimer-calculator">
+    <h3>Dendrimer parameter calculator</h3>
 
+    <label for="chain-length">
+      <code>chain_length</code>
+    </label>
+    <input id="chain-length" type="number" min="2" step="1" value="3">
+
+    <label for="branching-factor">
+      Branching factor
+    </label>
+    <input id="branching-factor" type="number" min="1" step="1" value="2">
+
+    <label for="generations">
+      Number of generations
+    </label>
+    <input id="generations" type="number" min="1" step="1" value="2">
+
+    <div class="dendrimer-buttons">
+      <button id="generate-dendrimer" class="dendrimer-button" type="button">
+        Generate
+      </button>
+
+      <button id="copy-dendrimer" class="dendrimer-button" type="button">
+        Copy parameters
+      </button>
+    </div>
+
+    <pre id="dendrimer-parameters">—</pre>
+
+    <p id="dendrimer-error"></p>
+  </div>
+
+  <div class="dendrimer-preview">
+    <h3>Dendrimer structure preview</h3>
+
+    <div class="dendrimer-svg-wrapper">
+      <svg id="dendrimer-svg" viewBox="0 0 900 650" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Static dendrimer structure"></svg>
+    </div>
+
+    <p id="dendrimer-status">
+      Change the parameters or press Generate.
+    </p>
+  </div>
+
+</div>
+
+<h3 id="comb-grafting">Comb grafting</h3>
+<p>For branch <span class="arithmatex">\(i\)</span>, the grafting site on the backbone is</p>
+<div class="arithmatex">\[
+k_i = (k_0 + i s)\bmod n
+\]</div>
+<p>where <span class="arithmatex">\(k_0\)</span> is the first grafting index, <span class="arithmatex">\(s\)</span> is the spacing between grafting sites, and <span class="arithmatex">\(n\)</span> is <code>chain_length</code>.</p>
+<p>The <code>mode</code> parameter encodes both <span class="arithmatex">\(k_0\)</span> and <span class="arithmatex">\(s\)</span>:</p>
+<div class="arithmatex">\[
+\texttt{mode}=sn+k_0
+\]</div>
+<p>The values can be recovered as</p>
+<div class="arithmatex">\[
+k_0=\texttt{mode}\bmod n
+\]</div>
+<p>and</p>
+<div class="arithmatex">\[
+s=\left\lfloor\frac{\texttt{mode}}{n}\right\rfloor
+\]</div>
+<p>For example, with <span class="arithmatex">\(n=20\)</span>, <span class="arithmatex">\(k_0=1\)</span>, and <span class="arithmatex">\(s=2\)</span>,</p>
+<div class="arithmatex">\[
+k_i=(1+2i)\bmod20
+\]</div>
+<p>which gives the grafting indices</p>
+<div class="arithmatex">\[
+1,3,5,7,9,\ldots
+\]</div>
+<p>and</p>
+<div class="arithmatex">\[
+\texttt{mode}=2\cdot20+1=41.
+\]</div>
+<div id="comb-tool" class="comb-tool">
+
+  <div class="comb-calculator">
+    <h3>Comb polymer calculator</h3>
+
+    <label for="comb-chain-length">
+      <code>chain_length</code>
+    </label>
+    <input id="comb-chain-length" type="number" min="2" step="1" value="20">
+
+    <label for="comb-branch-length">
+      <code>branch_length</code>
+    </label>
+    <input id="comb-branch-length" type="number" min="1" step="1" value="5">
+
+    <label for="comb-number-branches">
+      <code>n_branches</code>
+    </label>
+    <input id="comb-number-branches" type="number" min="1" step="1" value="8">
+
+    <label for="comb-first-attachment">
+    First attachment index
+    </label>
+    <input id="comb-first-attachment" type="number" min="0" step="1" value="1">
+
+    <label for="comb-spacing">
+      Attachment spacing
+    </label>
+    <input id="comb-spacing" type="number" min="1" step="1" value="2">
+
+    <div class="comb-buttons">
+      <button id="generate-comb" type="button">
+        Generate
+      </button>
+
+      <button id="copy-comb" type="button">
+        Copy parameters
+      </button>
+    </div>
+
+    <pre id="comb-parameters">—</pre>
+
+    <p id="comb-error"></p>
+  </div>
+
+  <div class="comb-preview">
+    <h3>Comb structure preview</h3>
+
+    <div class="comb-svg-wrapper">
+      <svg id="comb-svg" viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Static comb polymer structure"></svg>
+    </div>
+
+    <p id="comb-status">
+      Change the parameters or press Generate.
+    </p>
+  </div>
+
+</div>
+
+<h3 id="diamond-gel-grafting">Diamond gel grafting</h3>
+<p>Special case for <code>mode &gt; 0</code> is gel formation made by setting <code>chains -1</code>. The diamond gel consists of eight permanent branching nodes connected by 16 polymer arms. Four nodes form the inner set and four form the outer set, with every inner node connected to every outer node.</p>
+<p>If each arm contains <span class="arithmatex">\(n_{\mathrm{arm}}\)</span> internal beads, the total gel size is</p>
+<div class="arithmatex">\[
+n = 8 + 16n_{\mathrm{arm}}
+\]</div>
+<p>where the first eight bead indices, <span class="arithmatex">\(0\)</span> to <span class="arithmatex">\(7\)</span>, are the branching nodes.</p>
+<p>The remaining beads,</p>
+<div class="arithmatex">\[
+8,9,\ldots,n-1,
+\]</div>
+<p>form the internal parts of the 16 gel arms and can be used as grafting sites.</p>
+<p>For grafting in comb mode, the attachment index is updated as</p>
+<div class="arithmatex">\[
+k_{i+1}
+=
+8+
+\left[
+(k_i-8)+s
+\right]
+\bmod(n-8)
+\]</div>
+<p>where</p>
+<div class="arithmatex">\[
+s=
+\left\lfloor
+\frac{\texttt{mode}}{n-8}
+\right\rfloor
+\]</div>
+<p>is the step between grafting sites.</p>
+<p>The subtraction and addition of <span class="arithmatex">\(8\)</span> ensure that grafts are attached only to arm beads and never to the eight gel junctions.</p>
+<div id="gel-comb-tool" class="gel-comb-tool">
+  <div class="gel-comb-calculator">
+    <h3>Diamond-gel grafting calculator</h3>
+
+    <label for="gel-arm-length">
+      Internal beads per gel arm
+    </label>
+    <input id="gel-arm-length" type="number" min="1" step="1" value="5">
+
+    <label for="gel-branch-length">
+      <code>branch_length</code>
+    </label>
+    <input id="gel-branch-length" type="number" min="1" step="1" value="4">
+
+    <label for="gel-number-branches">
+      <code>n_branches</code>
+    </label>
+    <input id="gel-number-branches" type="number" min="1" step="1" value="12">
+
+    <label for="gel-graft-spacing">
+      Grafting step
+    </label>
+    <input id="gel-graft-spacing" type="number" min="1" step="1" value="3">
+
+    <div class="gel-comb-buttons">
+      <button id="generate-gel-comb" type="button">
+        Generate
+      </button>
+
+      <button id="copy-gel-comb" type="button">
+        Copy parameters
+      </button>
+    </div>
+
+    <pre id="gel-comb-parameters">—</pre>
+
+    <p id="gel-comb-error"></p>
+  </div>
+
+  <div class="gel-comb-preview">
+    <h3>Gel-arm grafting preview</h3>
+
+    <div class="gel-comb-svg-wrapper">
+      <svg id="gel-comb-svg" viewBox="0 0 1000 760" width="1000" height="760" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Diamond gel grafting scheme">
+        <rect x="0" y="0" width="1000" height="760" fill="white"></rect>
+
+        <text x="500" y="380" text-anchor="middle" fill="#666" font-size="20">
+          Loading gel preview…
+        </text>
+      </svg>
+    </div>
+
+    <p id="gel-comb-status">
+      Loading calculator…
+    </p>
+  </div>
+</div>
 
 
 
@@ -649,6 +1169,14 @@
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
+        <script src="../../assets/javascripts/dendrimer.js"></script>
+      
+        <script src="../../assets/javascripts/comb.js"></script>
+      
+        <script src="../../assets/javascripts/gel-comb.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

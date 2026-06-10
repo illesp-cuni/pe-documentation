@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -42,11 +39,13 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -54,7 +53,17 @@
 
     
     
-  </head>
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -85,12 +94,12 @@
     <a href="../.." title="pe documentation" class="md-header__button md-logo" aria-label="pe documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -118,24 +127,24 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -143,7 +152,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -173,7 +182,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -185,13 +194,13 @@
     <a href="../.." title="pe documentation" class="md-nav__button md-logo" aria-label="pe documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     pe documentation
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -237,7 +246,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -267,7 +276,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -389,7 +398,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#monte-carlo-mc-method" class="md-nav__link">
@@ -457,7 +466,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -487,7 +496,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -541,7 +550,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4">
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -571,7 +580,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -644,7 +653,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -660,7 +669,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#monte-carlo-mc-method" class="md-nav__link">
@@ -722,31 +731,31 @@
 Q = \sum_i e^{-\beta E_i} = \frac{1}{N! \Lambda^{3N}} \int e^{-\beta U(\mathbf{r}^N)} \, d\mathbf{r}^N
 \
 $$
-where <span class="arithmatex"><span class="MathJax_Preview">\(U(\mathbf{r}^N)\)</span><script type="math/tex">\(U(\mathbf{r}^N)\)</script></span> is the potential energy of a configuration of <span class="arithmatex"><span class="MathJax_Preview">\(N\)</span><script type="math/tex">\(N\)</script></span> particles, and <span class="arithmatex"><span class="MathJax_Preview">\(\beta = 1/(k_B T)\)</span><script type="math/tex">\(\beta = 1/(k_B T)\)</script></span>.  </p>
-<p>The ensemble average of a thermodynamic observable <span class="arithmatex"><span class="MathJax_Preview">\(A\)</span><script type="math/tex">\(A\)</script></span> is:
+where <span class="arithmatex">\(\(U(\mathbf{r}^N)\)\)</span> is the potential energy of a configuration of <span class="arithmatex">\(\(N\)\)</span> particles, and <span class="arithmatex">\(\(\beta = 1/(k_B T)\)\)</span>.  </p>
+<p>The ensemble average of a thermodynamic observable <span class="arithmatex">\(\(A\)\)</span> is:
 $$
 \langle A\rangle = \sum_i A_i P_i = \frac{\sum_i A_i e^{-\beta E_i}}{\sum_i e^{-\beta E_i}}
 $$</p>
-<p>where:<br />
-- <span class="arithmatex"><span class="MathJax_Preview">\(A_i\)</span><script type="math/tex">\(A_i\)</script></span> is the value of the observable in state <span class="arithmatex"><span class="MathJax_Preview">\(i\)</span><script type="math/tex">\(i\)</script></span>,<br />
-- <span class="arithmatex"><span class="MathJax_Preview">\(P_i\)</span><script type="math/tex">\(P_i\)</script></span> is the Boltzmann probability of state <span class="arithmatex"><span class="MathJax_Preview">\(i\)</span><script type="math/tex">\(i\)</script></span>, <span class="arithmatex"><span class="MathJax_Preview">\(P_i = \frac{e^{-\beta E_i}}{Q}\)</span><script type="math/tex">\(P_i = \frac{e^{-\beta E_i}}{Q}\)</script></span>,<br />
-- <span class="arithmatex"><span class="MathJax_Preview">\(E_i\)</span><script type="math/tex">\(E_i\)</script></span> is the energy of state <span class="arithmatex"><span class="MathJax_Preview">\(i\)</span><script type="math/tex">\(i\)</script></span>,<br />
-- <span class="arithmatex"><span class="MathJax_Preview">\(Q = \sum_i e^{-\beta E_i}\)</span><script type="math/tex">\(Q = \sum_i e^{-\beta E_i}\)</script></span> is the partition function (or sum over states).</p>
+<p>where:<br>
+- <span class="arithmatex">\(\(A_i\)\)</span> is the value of the observable in state <span class="arithmatex">\(\(i\)\)</span>,<br>
+- <span class="arithmatex">\(\(P_i\)\)</span> is the Boltzmann probability of state <span class="arithmatex">\(\(i\)\)</span>, <span class="arithmatex">\(\(P_i = \frac{e^{-\beta E_i}}{Q}\)\)</span>,<br>
+- <span class="arithmatex">\(\(E_i\)\)</span> is the energy of state <span class="arithmatex">\(\(i\)\)</span>,<br>
+- <span class="arithmatex">\(\(Q = \sum_i e^{-\beta E_i}\)\)</span> is the partition function (or sum over states).</p>
 <p>In continuous interacting chemical systems:
 $$
 \
 \langle A \rangle = \frac{\int A(\mathbf{r}^N) e^{-\beta U(\mathbf{r}^N)} \, d\mathbf{r}^N}{\int e^{-\beta U(\mathbf{r}^N)} \, d\mathbf{r}^N}
 \
 $$
-Analytical evaluation of the <span class="arithmatex"><span class="MathJax_Preview">\(\int e^{-\beta U(\mathbf{r}^N)} \, d\mathbf{r}^N\)</span><script type="math/tex">\(\int e^{-\beta U(\mathbf{r}^N)} \, d\mathbf{r}^N\)</script></span> integral is computationally impossible for large systems. MC circumvents this by <strong>sampling configurations according to their Boltzmann probability</strong>. This biased sampling is referred to as the <strong>Metropolis algorithm</strong>. In this method, configurations are sampled according to the <strong>Boltzmann probability</strong>:</p>
+Analytical evaluation of the <span class="arithmatex">\(\(\int e^{-\beta U(\mathbf{r}^N)} \, d\mathbf{r}^N\)\)</span> integral is computationally impossible for large systems. MC circumvents this by <strong>sampling configurations according to their Boltzmann probability</strong>. This biased sampling is referred to as the <strong>Metropolis algorithm</strong>. In this method, configurations are sampled according to the <strong>Boltzmann probability</strong>:</p>
 <p>$$ \ P(\mathbf{r}^N) \propto e^{-\beta U(\mathbf{r}^N)}$$</p>
-<p>The Metropolis algorithm generates a Markov chain of configurations by <strong>proposing a trial move</strong> from the current configuration <span class="arithmatex"><span class="MathJax_Preview">\(\mathbf{r}^N_{\text{old}}\)</span><script type="math/tex">\(\mathbf{r}^N_{\text{old}}\)</script></span> to a new configuration <span class="arithmatex"><span class="MathJax_Preview">\(\mathbf{r}^N_{\text{new}}\)</span><script type="math/tex">\(\mathbf{r}^N_{\text{new}}\)</script></span>. The <strong>acceptance of this move</strong> is determined by the Metropolis criterion:</p>
+<p>The Metropolis algorithm generates a Markov chain of configurations by <strong>proposing a trial move</strong> from the current configuration <span class="arithmatex">\(\(\mathbf{r}^N_{\text{old}}\)\)</span> to a new configuration <span class="arithmatex">\(\(\mathbf{r}^N_{\text{new}}\)\)</span>. The <strong>acceptance of this move</strong> is determined by the Metropolis criterion:</p>
 <p>$$ \ P_{\mathrm{accept}} = \min \Big( 1, e^{-\beta \Delta U} \Big)$$</p>
 <p>where</p>
 <p>$$ \ \Delta U = U(\mathbf{r}^N_{\text{new}}) - U(\mathbf{r}^N_{\text{old}})$$</p>
 <ul>
-<li>If <span class="arithmatex"><span class="MathJax_Preview">\(\Delta U \le 0\)</span><script type="math/tex">\(\Delta U \le 0\)</script></span>, the new configuration is always accepted.  </li>
-<li>If <span class="arithmatex"><span class="MathJax_Preview">\(\Delta U &gt; 0\)</span><script type="math/tex">\(\Delta U > 0\)</script></span>, the new configuration is accepted with probability <span class="arithmatex"><span class="MathJax_Preview">\(e^{-\beta \Delta U}\)</span><script type="math/tex">\(e^{-\beta \Delta U}\)</script></span>, allowing the algorithm to explore higher-energy configurations and maintain detailed balance.  </li>
+<li>If <span class="arithmatex">\(\(\Delta U \le 0\)\)</span>, the new configuration is always accepted.  </li>
+<li>If <span class="arithmatex">\(\(\Delta U &gt; 0\)\)</span>, the new configuration is accepted with probability <span class="arithmatex">\(\(e^{-\beta \Delta U}\)\)</span>, allowing the algorithm to explore higher-energy configurations and maintain detailed balance.  </li>
 </ul>
 <p>This ensures that, over many steps, configurations are sampled according to the Boltzmann distribution, enabling accurate estimation of ensemble averages.</p>
 <p>The partition function can be therefore approximated as sum over sampled states:
@@ -755,10 +764,10 @@ $$
 Q = \sum_i e^{-\beta E_i} \approx \sum_{i=1}^{M} e^{-\beta E_i}
 \
 $$</p>
-<p>where:<br />
-- <span class="arithmatex"><span class="MathJax_Preview">\(E_i\)</span><script type="math/tex">\(E_i\)</script></span> is the potential energy of state <span class="arithmatex"><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>,<br />
-- The sum on the right is over the <span class="arithmatex"><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> states sampled in Monte Carlo (MC).  </p>
-<p>Once <span class="arithmatex"><span class="MathJax_Preview">\(M\)</span><script type="math/tex">\(M\)</script></span> configurations <span class="arithmatex"><span class="MathJax_Preview">\(\{\mathbf{r}_1, \mathbf{r}_2, \dots, \mathbf{r}_M\}\)</span><script type="math/tex">\(\{\mathbf{r}_1, \mathbf{r}_2, \dots, \mathbf{r}_M\}\)</script></span> are sampled, the ensemble average of an observable <span class="arithmatex"><span class="MathJax_Preview">\(A(\mathbf{r}^N)\)</span><script type="math/tex">\(A(\mathbf{r}^N)\)</script></span> can be approximated as:
+<p>where:<br>
+- <span class="arithmatex">\(\(E_i\)\)</span> is the potential energy of state <span class="arithmatex">\(i\)</span>,<br>
+- The sum on the right is over the <span class="arithmatex">\(M\)</span> states sampled in Monte Carlo (MC).  </p>
+<p>Once <span class="arithmatex">\(\(M\)\)</span> configurations <span class="arithmatex">\(\(\{\mathbf{r}_1, \mathbf{r}_2, \dots, \mathbf{r}_M\}\)\)</span> are sampled, the ensemble average of an observable <span class="arithmatex">\(\(A(\mathbf{r}^N)\)\)</span> can be approximated as:
 $$
 \
 \langle A \rangle \approx \frac{1}{M} \sum_{k=1}^{M} A(\mathbf{r}_k)
@@ -766,40 +775,31 @@ $$
 $$
 Here:  </p>
 <ul>
-<li><span class="arithmatex"><span class="MathJax_Preview">\(\langle A \rangle\)</span><script type="math/tex">\(\langle A \rangle\)</script></span> is the ensemble (thermodynamic) average.  </li>
-<li><span class="arithmatex"><span class="MathJax_Preview">\(\mathbf{r}_k\)</span><script type="math/tex">\(\mathbf{r}_k\)</script></span> is the <span class="arithmatex"><span class="MathJax_Preview">\(k\)</span><script type="math/tex">\(k\)</script></span>-th sampled configuration.  </li>
-<li><span class="arithmatex"><span class="MathJax_Preview">\(M\)</span><script type="math/tex">\(M\)</script></span> is the total number of sampled configurations.</li>
+<li><span class="arithmatex">\(\(\langle A \rangle\)\)</span> is the ensemble (thermodynamic) average.  </li>
+<li><span class="arithmatex">\(\(\mathbf{r}_k\)\)</span> is the <span class="arithmatex">\(\(k\)\)</span>-th sampled configuration.  </li>
+<li><span class="arithmatex">\(\(M\)\)</span> is the total number of sampled configurations.</li>
 </ul>
 <h2 id="molecular-dynamics-md-method">Molecular Dynamics (MD) Method</h2>
 <p>Molecular Dynamics (MD) uses <strong>Newton’s equations of motion</strong> to simulate the time evolution of a system:
 $$ \ m_i \frac{d^2 \mathbf{r}_i}{dt^2} = \mathbf{F}_i \ $$
-where the <strong>force</strong> <span class="arithmatex"><span class="MathJax_Preview">\(\mathbf{F}_i\)</span><script type="math/tex">\(\mathbf{F}_i\)</script></span> on particle <span class="arithmatex"><span class="MathJax_Preview">\(i\)</span><script type="math/tex">\(i\)</script></span> is derived from the potential energy <span class="arithmatex"><span class="MathJax_Preview">\(U(\mathbf{r}^N)\)</span><script type="math/tex">\(U(\mathbf{r}^N)\)</script></span>. Explicitly in Cartesian components:</p>
-<div class="arithmatex">
-<div class="MathJax_Preview">
+where the <strong>force</strong> <span class="arithmatex">\(\(\mathbf{F}_i\)\)</span> on particle <span class="arithmatex">\(\(i\)\)</span> is derived from the potential energy <span class="arithmatex">\(\(U(\mathbf{r}^N)\)\)</span>. Explicitly in Cartesian components:</p>
+<div class="arithmatex">\[
 \begin{cases}
 m_i \frac{d^2 x_i}{dt^2} = -\frac{\partial U}{\partial x_i} \\
 m_i \frac{d^2 y_i}{dt^2} = -\frac{\partial U}{\partial y_i} \\
 m_i \frac{d^2 z_i}{dt^2} = -\frac{\partial U}{\partial z_i} 
 \end{cases}
-</div>
-<script type="math/tex; mode=display">
-\begin{cases}
-m_i \frac{d^2 x_i}{dt^2} = -\frac{\partial U}{\partial x_i} \\
-m_i \frac{d^2 y_i}{dt^2} = -\frac{\partial U}{\partial y_i} \\
-m_i \frac{d^2 z_i}{dt^2} = -\frac{\partial U}{\partial z_i} 
-\end{cases}
-</script>
-</div>
+\]</div>
 <p>By integrating these equations of motion over small time steps, MD generates trajectories that sample the system’s <strong>phase space</strong>. Over long times, these trajectories approximate the ensemble distribution, allowing computation of thermodynamic and dynamic properties.</p>
 <h2 id="hamiltonian-monte-carlo-hmc-method">Hamiltonian Monte Carlo (HMC) Method</h2>
 <p>Hamiltonian Monte Carlo (HMC) is a <strong>hybrid method</strong> that combines the strengths of <strong>Monte Carlo (MC) sampling</strong> and <strong>Molecular Dynamics (MD)</strong>. It uses <strong>dynamical trajectories</strong> to propose moves for evaluation by Metropolis algorithm, improving sampling efficiency for high-dimensional systems.</p>
-<p>In HMC, we introduce <strong>fictitious momenta</strong> <span class="arithmatex"><span class="MathJax_Preview">\(\mathbf{p}_i\)</span><script type="math/tex">\(\mathbf{p}_i\)</script></span>, taken from <strong>Maxwell-Boltzman distribution</strong> at the same temperature that <span class="arithmatex"><span class="MathJax_Preview">\(\beta = 1/(k_B T)\)</span><script type="math/tex">\(\beta = 1/(k_B T)\)</script></span> is set to. For each particle we then define the <strong>Hamiltonian</strong>:
+<p>In HMC, we introduce <strong>fictitious momenta</strong> <span class="arithmatex">\(\(\mathbf{p}_i\)\)</span>, taken from <strong>Maxwell-Boltzman distribution</strong> at the same temperature that <span class="arithmatex">\(\(\beta = 1/(k_B T)\)\)</span> is set to. For each particle we then define the <strong>Hamiltonian</strong>:
 $$
 H(\mathbf{r}^N, \mathbf{p}^N) = U(\mathbf{r}^N) + K(\mathbf{p}^N)
 $$</p>
-<p>where:<br />
-- <span class="arithmatex"><span class="MathJax_Preview">\(U(\mathbf{r}^N)\)</span><script type="math/tex">\(U(\mathbf{r}^N)\)</script></span> is the potential energy,<br />
-- <span class="arithmatex"><span class="MathJax_Preview">\(K(\mathbf{p}^N) = \sum_i \frac{\mathbf{p}_i^2}{2 m_i}\)</span><script type="math/tex">\(K(\mathbf{p}^N) = \sum_i \frac{\mathbf{p}_i^2}{2 m_i}\)</script></span> is the kinetic energy associated with the momenta.</p>
+<p>where:<br>
+- <span class="arithmatex">\(\(U(\mathbf{r}^N)\)\)</span> is the potential energy,<br>
+- <span class="arithmatex">\(\(K(\mathbf{p}^N) = \sum_i \frac{\mathbf{p}_i^2}{2 m_i}\)\)</span> is the kinetic energy associated with the momenta.</p>
 <p>HMC uses <strong>MD dynamics</strong> to generate trial moves.</p>
 <p>After generating a trajectory, the new configuration is accepted according to the <strong>Metropolis criterion</strong> based on the Hamiltonian:
 $$
@@ -807,9 +807,9 @@ P_{\text{accept}} = \min \Big( 1, e^{-\beta \left[ H(\mathbf{r}^N_{\text{new}}, 
 $$</p>
 <ul>
 <li>If the Hamiltonian is exactly conserved, the move is always accepted.  </li>
-<li>Numerical integration errors may slightly change <span class="arithmatex"><span class="MathJax_Preview">H</span><script type="math/tex">H</script></span>, which the Metropolis step corrects to maintain <strong>detailed balance</strong>.</li>
+<li>Numerical integration errors may slightly change <span class="arithmatex">\(H\)</span>, which the Metropolis step corrects to maintain <strong>detailed balance</strong>.</li>
 </ul>
-<hr />
+<hr>
 
 
 
@@ -866,6 +866,14 @@ $$</p>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
+        <script src="../../assets/javascripts/dendrimer.js"></script>
+      
+        <script src="../../assets/javascripts/comb.js"></script>
+      
+        <script src="../../assets/javascripts/gel-comb.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
