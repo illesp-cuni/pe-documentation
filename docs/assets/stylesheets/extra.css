@@ -1,0 +1,499 @@
+.dendrimer-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.dendrimer-calculator,
+.dendrimer-preview {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.05rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.45rem;
+  background: var(--md-default-bg-color);
+}
+
+.dendrimer-calculator {
+  max-width: 420px;
+}
+
+.dendrimer-calculator h3,
+.dendrimer-preview h3 {
+  margin: 0 0 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.dendrimer-calculator label {
+  display: block !important;
+  width: 100%;
+  margin: 0.65rem 0 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.dendrimer-calculator input[type="number"] {
+  display: block !important;
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none !important;
+  height: 2rem;
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  font: inherit;
+  font-size: 0.78rem;
+}
+
+.dendrimer-calculator input[type="number"]:focus {
+  border-color: var(--md-primary-fg-color);
+  outline: 1px solid var(--md-primary-fg-color);
+}
+
+.dendrimer-buttons {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  width: 100%;
+  margin-top: 0.9rem;
+}
+
+.dendrimer-button {
+  display: inline-flex !important;
+  visibility: visible !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 7rem;
+  min-height: 2.1rem;
+  margin: 0 !important;
+  padding: 0.42rem 0.8rem !important;
+  border: 1px solid #1976d2 !important;
+  border-radius: 0.25rem !important;
+  color: #ffffff !important;
+  background-color: #1976d2 !important;
+  font: inherit !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  cursor: pointer !important;
+  opacity: 1 !important;
+}
+
+.dendrimer-button:hover {
+  background-color: #1565c0 !important;
+  border-color: #1565c0 !important;
+}
+
+.dendrimer-button:active {
+  transform: translateY(1px);
+}
+
+#dendrimer-parameters {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  overflow-x: auto;
+  border: 0;
+  color: var(--md-code-fg-color);
+  background: transparent;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+#dendrimer-error {
+  min-height: 0.8rem;
+  margin: 0.4rem 0 0;
+  color: #d32f2f;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.dendrimer-preview {
+  width: 100%;
+}
+
+.dendrimer-svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 360px;
+  overflow: auto;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: #ffffff;
+}
+
+#dendrimer-svg {
+  display: block;
+  width: 100%;
+  min-width: 560px;
+  height: auto;
+  min-height: 350px;
+}
+
+#dendrimer-status {
+  margin: 0.55rem 0 0;
+  overflow-wrap: anywhere;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 500px) {
+  .dendrimer-calculator,
+  .dendrimer-preview {
+    padding: 0.8rem;
+  }
+
+  .dendrimer-buttons {
+    flex-direction: column;
+  }
+
+  .dendrimer-button {
+    width: 100%;
+  }
+
+  #dendrimer-svg {
+    min-width: 500px;
+  }
+}
+
+
+
+.comb-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.comb-calculator,
+.comb-preview {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.05rem;
+  border: 1px solid
+    var(--md-default-fg-color--lightest);
+  border-radius: 0.45rem;
+  background:
+    var(--md-default-bg-color);
+}
+
+.comb-calculator {
+  max-width: 420px;
+}
+
+.comb-calculator h3,
+.comb-preview h3 {
+  margin: 0 0 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.comb-calculator label {
+  display: block;
+  margin: 0.65rem 0 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.comb-calculator input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2rem;
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid
+    var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  color:
+    var(--md-default-fg-color);
+  background:
+    var(--md-default-bg-color);
+  font: inherit;
+  font-size: 0.78rem;
+}
+
+.comb-calculator input:focus {
+  border-color:
+    var(--md-primary-fg-color);
+  outline: 1px solid
+    var(--md-primary-fg-color);
+}
+
+.comb-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.9rem;
+}
+
+.comb-buttons button {
+  min-height: 2.1rem;
+  padding: 0.4rem 0.75rem;
+  border: 0;
+  border-radius: 0.22rem;
+  color:
+    var(--md-primary-bg-color);
+  background:
+    var(--md-primary-fg-color);
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.comb-buttons button:hover {
+  opacity: 0.88;
+}
+
+#comb-parameters {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  overflow-x: auto;
+  border: 0;
+  color:
+    var(--md-code-fg-color);
+  background: transparent;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+#comb-error {
+  min-height: 0.8rem;
+  margin: 0.4rem 0 0;
+  color: #d32f2f;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.comb-preview {
+  width: 100%;
+}
+
+.comb-svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 360px;
+  overflow: auto;
+  border: 1px solid
+    var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: #ffffff;
+}
+
+#comb-svg {
+  display: block;
+  width: 100%;
+  min-width: 560px;
+  height: auto;
+  min-height: 350px;
+}
+
+#comb-status {
+  margin: 0.55rem 0 0;
+  overflow-wrap: anywhere;
+  color:
+    var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 500px) {
+  .comb-calculator,
+  .comb-preview {
+    padding: 0.8rem;
+  }
+
+  .comb-buttons {
+    flex-direction: column;
+  }
+
+  .comb-buttons button {
+    width: 100%;
+  }
+
+  #comb-svg {
+    min-width: 500px;
+  }
+}
+.gel-comb-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.gel-comb-calculator,
+.gel-comb-preview {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.05rem;
+  border: 1px solid
+    var(--md-default-fg-color--lightest);
+  border-radius: 0.45rem;
+  background:
+    var(--md-default-bg-color);
+}
+
+.gel-comb-calculator {
+  max-width: 420px;
+}
+
+.gel-comb-calculator h3,
+.gel-comb-preview h3 {
+  margin: 0 0 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.gel-comb-calculator label {
+  display: block;
+  margin: 0.65rem 0 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.gel-comb-calculator input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2rem;
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid
+    var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  color:
+    var(--md-default-fg-color);
+  background:
+    var(--md-default-bg-color);
+  font: inherit;
+  font-size: 0.78rem;
+}
+
+.gel-comb-calculator input:focus {
+  border-color:
+    var(--md-primary-fg-color);
+  outline: 1px solid
+    var(--md-primary-fg-color);
+}
+
+.gel-comb-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.9rem;
+}
+
+.gel-comb-buttons button {
+  min-height: 2.1rem;
+  padding: 0.4rem 0.75rem;
+  border: 0;
+  border-radius: 0.22rem;
+  color:
+    var(--md-primary-bg-color);
+  background:
+    var(--md-primary-fg-color);
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.gel-comb-buttons button:hover {
+  opacity: 0.88;
+}
+
+#gel-comb-parameters {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  overflow-x: auto;
+  border: 0;
+  color:
+    var(--md-code-fg-color);
+  background: transparent;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+#gel-comb-error {
+  min-height: 0.8rem;
+  margin: 0.4rem 0 0;
+  color: #d32f2f;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.gel-comb-preview {
+  width: 100%;
+}
+
+.gel-comb-svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 420px;
+  overflow: auto;
+  border: 1px solid
+    var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: #ffffff;
+}
+
+#gel-comb-svg {
+  display: block;
+  width: 100%;
+  min-width: 650px;
+  height: auto;
+  min-height: 410px;
+}
+
+#gel-comb-status {
+  margin: 0.55rem 0 0;
+  overflow-wrap: anywhere;
+  color:
+    var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 500px) {
+  .gel-comb-calculator,
+  .gel-comb-preview {
+    padding: 0.8rem;
+  }
+
+  .gel-comb-buttons {
+    flex-direction: column;
+  }
+
+  .gel-comb-buttons button {
+    width: 100%;
+  }
+
+  #gel-comb-svg {
+    min-width: 600px;
+  }
+}
